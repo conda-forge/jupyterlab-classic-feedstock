@@ -1,6 +1,6 @@
 {% set name = "jupyterlab-classic" %}
-{% set version = "0.1.6" %}
-{% set sha256 = "33eeda849d201b29b37bbfc35afc50bbe6f4ec7e8504519a8bd7986d55505509" %}
+{% set version = "0.1.7" %}
+{% set sha256 = "a675604ad066f187efa07dc4494747ba8b57c07d26738683c96bbc49634c4445" %}
 
 package:
   name: {{ name }}
@@ -18,13 +18,17 @@ build:
 
 requirements:
   host:
+    - jupyter-packaging >=0.7.9,<0.8.0
     - pip
     - python >=3.6
-    - jupyter-packaging >=0.7.9
 
   run:
-    - python >=3.6
+    - nbclassic >=0.2,<1
     - jupyterlab >=3.0.0,<4
+    - jupyterlab_server >=2.3,<3
+    - jupyter_server >=1.4,<2
+    - python >=3.6
+    - tornado >=6.1
 
 test:
   imports:
