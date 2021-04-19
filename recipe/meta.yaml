@@ -1,6 +1,6 @@
 {% set name = "jupyterlab-classic" %}
-{% set version = "0.1.9" %}
-{% set sha256 = "1aa9b442e64adbb81a93d84771ab404f616f7ae2c7891fc0637fc42ec97d1696" %}
+{% set version = "0.1.10" %}
+{% set sha256 = "60911d8a2f507a5c9bf7baf8b5bac39bcf91b9e04a038d798ec214944dcaf6c4" %}
 
 package:
   name: {{ name }}
